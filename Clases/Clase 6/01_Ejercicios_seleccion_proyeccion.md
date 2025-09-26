@@ -42,7 +42,7 @@ Objetivo: Seleccionar empleados del departamento IT con salario mayor a 2000.
 
 Operación:
 
-σ(depto = "IT" ∧ wedge salario > 2000)(EMPLEADO)
+σ(depto = "IT" ∧ salario > 2000)(EMPLEADO)
 
 Resultado:
 
@@ -59,7 +59,7 @@ Objetivo: Seleccionar empleados de IT o Ventas con salario menor a 2000.
 
 Operación:
 
-σ((depto = "IT" ∧ vee depto = "Ventas") ∧ wedge salario < 2000)(EMPLEADO)
+σ((depto = "IT" v depto = "Ventas") ∧ salario < 2000)(EMPLEADO)
 
 Resultado:
 

@@ -100,7 +100,7 @@ Objetivo: Mostrar nombre y salario de empleados de IT.
 
 Operación:
 
-π(nombre, salario)(σ(depto="IT")(EMPLEADO))
+π(nombre, salario)(σ(departamento ="IT")(EMPLEADO))
 
 Resultado:
 
@@ -122,7 +122,7 @@ Operación:
 
 Resultado:
 
-| depto  |
+| departamento |
 |--------|
 | Ventas |
 | IT     |

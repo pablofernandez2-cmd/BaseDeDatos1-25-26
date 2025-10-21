@@ -9,21 +9,22 @@
 * Modelemos hasta la cotización (no medlamos la siguiente parte del proceso que es recibir el pago de los clientes para comprar al proveedor, recibir los productos en bodegam, consolidar el paquete y enviar al cliente ).
   
   ## Entidades
-  
-  | Entidad                                 | Descripción                                                                                    |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| **CLIENTE**                       | Empresa industrial que solicita cotizaciones.                                                   |
-| **SOLICTUD_COTIZACION\_CLIENTE**           | Solicitud de cotización de un cliente.                                                         |
-| **DETALLE\_SOLICITUD_COTIZACION\_CLIENTE**   | Productos genéricos pedidos por ese cliente.                                                   |
-| **TIPO_PRODUCTO**            | Tipo de producto sin marca ni modelo.                                                           |
-| **SOLICITUD\_PROVEEDOR**          | Solicitud de cotización enviada a un proveedor (emitida por el intermediario).                 |
-| **DETALLE\_SOLICITUD\_PROVEEDOR** | Lista de productos genéricos solicitados a ese proveedor (pueden provenir de varios clientes). |
-| **PROVEEDOR**                     | Empresa que ofrece insumos.                                                                     |
-| **OFERTA\_PROVEEDOR**             | Cotización que responde a una solicitud del intermediario.                                     |
-| **DETALLE\_OFERTA\_PROVEEDOR**    | Detalle de productos específicos, precios y condiciones ofrecidos.                             |
-| **PRODUCTO**          | Variante concreta del producto genérico (marca/modelo).                                        |
-  
-  ## Relaciones
+
+| Entidad                          | Descripción                                                                 |
+|----------------------------------|------------------------------------------------------------------------------|
+| CLIENTE                          | Empresa industrial que solicita cotizaciones.                               |
+| SOLICITUD_COTIZACION_CLIENTE     | Solicitud de cotización de un cliente.                                      |
+| DETALLE_SOLICITUD_COTIZACION_CLIENTE | Productos genéricos pedidos por ese cliente.                             |
+| TIPO_PRODUCTO                    | Tipo de producto sin marca ni modelo.                                       |
+| SOLICITUD_PROVEEDOR              | Solicitud de cotización enviada a un proveedor (emitida por el intermediario). |
+| DETALLE_SOLICITUD_PROVEEDOR      | Lista de productos genéricos solicitados a ese proveedor (pueden provenir de varios clientes). |
+| PROVEEDOR                        | Empresa que ofrece insumos.                                                 |
+| OFERTA_PROVEEDOR                 | Cotización que responde a una solicitud del intermediario.                  |
+| DETALLE_OFERTA_PROVEEDOR         | Detalle de productos específicos, precios y condiciones ofrecidos.          |
+| PRODUCTO                         | Variante concreta del producto genérico (marca/modelo).                     |
+
+
+## Relaciones
 
 | Relación | Dirección 1 | Dirección 2 | Cardinalidad |
 |-----------|-------------|--------------|--------------|

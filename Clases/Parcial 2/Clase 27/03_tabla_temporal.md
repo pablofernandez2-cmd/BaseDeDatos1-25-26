@@ -168,19 +168,4 @@ Desaparecen:
 
 Incluso si aparece `temporary`, es sobre ​**decenas de filas**​, no millones.
 
-### Eliminando también `HAVING`
-
-```sql
-ALTER TABLE country_sales_daily
-ADD INDEX idx_revenue_only (revenue);
-```
-
-```sql
-SELECT country, total_orders, revenue
-FROM country_sales_daily
-WHERE sales_date = '2024-12-31'
-AND revenue > 100000
-ORDER BY revenue DESC
-LIMIT 5;
-```
 
